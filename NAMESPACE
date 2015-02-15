@@ -1,0 +1,10 @@
+
+export(lba,tablba,rlba)
+
+S3method(print, lba)
+S3method(logLik, lba)
+S3method(summary, lba)
+
+S3method(print, pmod)
+S3method(predict, pmod)
+S3method(summary, pmod)
