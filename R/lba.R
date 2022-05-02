@@ -198,7 +198,7 @@ function(rt,
 				res$hessian <- -1*res$hessian # needed because of maximization done instead of minimization
 				res <- res[c("par","value","convergence","hessian")]
 				info <- try(solve(res$hessian),silent=TRUE)
-				if(class(info)=="try-error") res$ses <- NULL
+				if(inherits(info, "try-error")) res$ses <- NULL
 				else res$ses <- sqrt(diag(info))			
 			} else res <- res[c("par","value","convergence")]
 		} else {

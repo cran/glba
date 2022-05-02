@@ -8,3 +8,7 @@ S3method(summary, lba)
 S3method(print, pmod)
 S3method(predict, pmod)
 S3method(summary, pmod)
+
+importFrom("stats", "as.formula", "dnorm", "model.frame",
+           "model.matrix", "optim", "pnorm", "rnorm", "runif")
+importFrom("utils", "head")
